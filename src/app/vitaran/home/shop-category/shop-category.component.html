@@ -5,7 +5,7 @@
         <div class="col-lg-8 mx-auto">
           <h2>SHOP BY CATEGORY</h2>
           <ul>
-            <li *ngFor="let category of categories">{{category.type}}</li>
+            <li *ngFor="let category of categories" (click)="goTo(category)">{{category.type}}</li>
           </ul>
         </div>
       </div>
